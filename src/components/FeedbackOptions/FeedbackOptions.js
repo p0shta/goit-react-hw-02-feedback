@@ -1,7 +1,7 @@
+import React, { Component } from 'react';
+
 import PropTypes from 'prop-types';
 import s from './FeedbackOptions.module.css';
-
-import React, { Component } from 'react';
 
 export default class FeedbackOptions extends Component {
     render() {
