@@ -18,5 +18,6 @@ export default class Section extends Component {
 }
 
 Section.propTypes = {
+    children: PropTypes.element.isRequired,
     title: PropTypes.string.isRequired,
 };
