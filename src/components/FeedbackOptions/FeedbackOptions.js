@@ -10,7 +10,7 @@ export default class FeedbackOptions extends Component {
         return (
             <div>
                 <ul className={s.list}>
-                    {Object.keys(options).map(option => {
+                    {options.map(option => {
                         const capitalizedFirstLetterWord =
                             option.split('')[0].toUpperCase() + option.slice(1);
 
@@ -33,10 +33,6 @@ export default class FeedbackOptions extends Component {
 }
 
 FeedbackOptions.propTypes = {
-    options: PropTypes.shape({
-        bad: PropTypes.number,
-        good: PropTypes.number,
-        neutral: PropTypes.number,
-    }),
+    options: PropTypes.array.isRequired,
     onLeaveFeedback: PropTypes.func.isRequired,
 };
